@@ -20,10 +20,10 @@ class TryingMe{
       fname = in.next();
 
       System.out.print("Enter your favorite number: ");
-      faveNum = inInt.next();
+      faveNum = in.nextInt();
 
       System.out.print("Enter your expected GPA for this class: ");
-      expectedGPA = in.float();
+      expectedGPA = in.nextFloat();
 
       
       String formattedStr = formatInfo(fname, faveNum, expectedGPA);
@@ -33,4 +33,6 @@ class TryingMe{
    }
 }
 
-// is this working?
+/* is this working? >>> no, it's not (trying to see if the file will update on desktop)
+it isn't updating in real time?
+*/
