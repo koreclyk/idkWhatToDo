@@ -15,7 +15,15 @@ class TryingMe{
       String fname;
       int faveNum;
       float expectedGPA;
-      
+
+      System.out.print("Enter your first name: ");
+      fname = in.next();
+
+      System.out.print("Enter your favorite number: ");
+      faveNum = inInt.next();
+
+      System.out.print("Enter your expected GPA for this class: ");
+      expectedGPA = in.float();
 
       
       String formattedStr = formatInfo(fname, faveNum, expectedGPA);
