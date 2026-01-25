@@ -21,7 +21,11 @@ public class receiptsWanaBe{
   public static String formatInfo(String
 */
 
+import java.util.Scanner;
 
+public class receiptsWanaBe{
+  public static String formatInfo(String iNamUno, String iNamDos, String iNamTres, double iPrice, int iQuant){
+    System.out.printf("
 
 
 //just print
@@ -52,3 +56,4 @@ public class receiptsWanaBe{
   }
 }
 */
+
