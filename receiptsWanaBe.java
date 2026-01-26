@@ -46,6 +46,11 @@ class ReceiptsWanaBe{
     double subtot;
     double tax;
     double total;
+    double count1;
+    double count2;
+    double count3;
+    double count4;
+    double count5;
 
     iName1 = "Potato(s)";
     iName2 = "Carrot(s)";
@@ -112,3 +117,4 @@ class ReceiptsWanaBe{
     System.out.printf("Total: $%.2f\n", total);
   }
 }
+
