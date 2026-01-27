@@ -15,6 +15,9 @@ output formatting: printf(%.2f)
 ch 2 variable storage & calculations
 */
 
+
+//YOU CAN SPECIFY THEIR TYPES UNDER THE PRINT STATEMENT
+
 import java.util.Scanner;
 
 class ReceiptsWanaBe{
@@ -117,4 +120,5 @@ class ReceiptsWanaBe{
     System.out.printf("Total: $%.2f\n", total);
   }
 }
+
 
