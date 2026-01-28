@@ -15,9 +15,33 @@ output formatting: printf(%.2f)
 ch 2 variable storage & calculations
 */
 
+v2
+import java.util.Scanner;
 
+class ReceiptsWanaBe{
+   public static void main(String[] args){
+      Scanner in = new Scanner(System.in);
+      
+      float pototprice = 1.1f;
+      float cacarotprice = 0.98f;
+      float gingarprice = 0.75f;
+      float brothprice = 3.0f;
+      float meatprice = 4.0f;
+      
+      System.out.printf("Potatoes:\t\t$%.2f\n", pototprice);
+      System.out.printf("Carrots:\t\t$%.2f\n", cacarotprice);
+      System.out.printf("Ginger:\t\t$%.2f\n", gingarprice);
+      System.out.printf("Broth(s):\t\t$%.2f\n", brothprice);
+      System.out.printf("Meat(s):\t\t$%.2f", meatprice);
+      
+   }
+}
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //YOU CAN SPECIFY THEIR TYPES UNDER THE PRINT STATEMENT
-
+//...I have to redo it
+/*
 import java.util.Scanner;
 
 class ReceiptsWanaBe{
@@ -120,5 +144,4 @@ class ReceiptsWanaBe{
     System.out.printf("Total: $%.2f\n", total);
   }
 }
-
-
+*/
