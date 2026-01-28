@@ -57,6 +57,18 @@ class SSnBrews{
       float bropur = broprice * broqty;
       float meatpur = meatprice * meatqty;
 
+      float subtot = pototpur + cacarotpur + gingarpur + bropur + meatpur;
+      float tax = subtot * 85 / 100; // using subtot * 0.85 gave me datatype mismatch errors
+      float toats = subtot + tax;    // instead of converting to double, I changed my math and kept them float
+
+      System.out.printf("\n\nYour subtotal is: $%.2f", subtot);
+      System.out.printf("\nWith tax, your total is: $%.2f", toats);
+      System.out.print("\n\nHow much will you be paying with today?: ");
+      float custin = in.nextFloat();
+
+      float custdone = toats - custin;
+
+      System.out.println("\n\n\t-------YOUR RECEIPT-------");
       System.out.println("\n\nQuantity\t\tItem\t\t\t\tCost\n");
       System.out.printf("%.0f\t\t\t\tPotato(es)\t\t$%.2f", pototqty, pototpur);
       System.out.printf("\n%.0f\t\t\t\tCarrot(s)\t\t$%.2f", cacarotqty, cacarotpur);
@@ -64,23 +76,15 @@ class SSnBrews{
       System.out.printf("\n%.0f\t\t\t\tBroth(s)\t\t\t$%.2f", broqty, bropur);
       System.out.printf("\n%.0f\t\t\t\tMeat(s)\t\t\t$%.2f", meatqty, meatpur);
       
-      float subtot = pototpur + cacarotpur + gingarpur + bropur + meatpur;
-      float tax = subtot * 85 / 100; // using subtot * 0.85 gave me datatype mismatch errors
-      float toats = subtot + tax;    // instead of converting to double, I changed my math and kept them float
-
       System.out.printf("\n\nSubtotal:\t\t$%.2f", subtot);
       System.out.printf("\nTax:\t\t\t\t$%.2f", tax);
-      System.out.printf("\n\nTotal:\t\t\t$%.2f\n\n", toats);
-
-      System.out.print("How much will you be paying with today?: ");
-      float custin = in.nextFloat();
-
-      float custdone = toats - custin;
-
-      System.out.printf("\nRemaining: $%.2f", custdone);
+      System.out.printf("\nTotal:\t\t\t$%.2f", toats);
+      System.out.printf("\nRemaining:\t\t$%.2f", custdone);
+      
       System.out.print("\n\n\t\t\tThank you for shopping at \n~~~Soups, Stews, and all Kinds of Brews!~~~");
       System.out.print("\n\t\t\t\tSee you next time!");
       
       
    }
 }
+
