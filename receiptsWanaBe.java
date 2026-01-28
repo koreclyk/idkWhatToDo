@@ -63,21 +63,21 @@ class ReceiptsWanaBe{
       System.out.printf("\n%.0f\t\t\t\tMeat(s)\t\t\t$%.2f", meatqty, meatpur);
 
       float subtot = pototpur + cacarotpur + gingarpur + bropur + meatpur;
-      float tax = subtot * 0.85;
+      float tax = subtot * 85 / 100;
       float toats = subtot + tax;
 
-      System.out.printf("\n\nSubtotal:\t\t$.2f", subtot);
-      System.out.printf("\nTax:\t\t$.2f", tax);
-      System.out.printf("\nTotal:\t\t$.2f", toats);
+      System.out.printf("\n\nSubtotal:\t\t$%.2f", subtot);
+      System.out.printf("\nTax:\t\t\t\t$%.2f", tax);
+      System.out.printf("\n\nTotal:\t\t\t$%.2f\n\n", toats);
 
       System.out.print("How much will you be paying with today?: ");
       float custin = in.nextFloat();
 
       float custdone = toats - custin;
 
-      System.out.printf("Remaining: $%.2f", custdone);
-      System.out.print("\n\n\tThank you for shopping at Soups, Stews, and all Kinds of Brews!");
-      System.out.print("\n\tSee you next time!");
+      System.out.printf("\nRemaining: $%.2f", custdone);
+      System.out.print("\n\n\t\t\tThank you for shopping at \n~~~Soups, Stews, and all Kinds of Brews!~~~");
+      System.out.print("\n\t\t\t\tSee you next time!");
      
       
       
@@ -192,4 +192,5 @@ class ReceiptsWanaBe{
   }
 }
 */
+
 
